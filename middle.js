@@ -1,3 +1,4 @@
+/*
 //Function IMPLEMENTATION
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected) === true) {
@@ -21,6 +22,7 @@ const eqArrays = function (arr1, arr2){
   }
   return output;
 };
+*/
 
 const middle = function (arr){
   let mid = [];
@@ -36,6 +38,10 @@ const middle = function (arr){
     return mid;
   }
 };
+
+module.exports = middle;
+
+/*
 //TEST CODE
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([1,2]), []);
@@ -43,3 +49,4 @@ assertArraysEqual(middle([1,2,3]), [2]);
 assertArraysEqual(middle([1,2,3,4,5]), [3]);
 assertArraysEqual(middle([1,2,3,4]), [2,3]);
 assertArraysEqual(middle([1,2,3,4,5,6]), [3,4]);
+*/

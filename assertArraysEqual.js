@@ -1,3 +1,5 @@
+const eqArrays = require ('../lotide/eqArrays');
+
 //Function IMPLEMENTATION
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected) === true) {
@@ -7,6 +9,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+/*
 const eqArrays = function (arr1, arr2){
   let output = true;
   if (arr1.length === arr2.length){
@@ -21,7 +24,12 @@ const eqArrays = function (arr1, arr2){
   }
   return output;
 };
+*/
 
+module.exports = assertArraysEqual;
+
+/*
 //TEST CODE
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
 assertArraysEqual([1, 2, 3], [1, 2, "3"]);
+*/
